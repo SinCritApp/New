@@ -172,6 +172,87 @@ nav{
 .product-rating{font-size:10px;color:var(--muted);margin-top:3px;}
 .product-rating .stars{color:#FFB800;}
 
+/* ── SKIN TEMPLATE VIEW ────────────────────────────── */
+.tmpl-wrap{padding:20px;padding-bottom:100px;}
+.tmpl-hero{
+  background:linear-gradient(135deg,#0D1A2E,#1A0A2E);
+  border:1px solid rgba(0,245,255,.25);border-radius:18px;
+  padding:22px 18px 18px;text-align:center;margin-bottom:20px;position:relative;overflow:hidden;
+}
+.tmpl-hero::after{content:'';position:absolute;top:-30px;right:-30px;width:130px;height:130px;
+  background:radial-gradient(circle,rgba(0,245,255,.18) 0%,transparent 70%);pointer-events:none;}
+.tmpl-hero-title{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:2px;line-height:1;}
+.tmpl-hero-title span{color:var(--cyan);}
+.tmpl-hero-sub{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.5;}
+.tmpl-selectors{display:flex;flex-direction:column;gap:12px;margin-bottom:20px;}
+.tmpl-sel-label{font-size:10px;font-weight:700;color:var(--muted);letter-spacing:1.5px;margin-bottom:6px;}
+.tmpl-select{
+  width:100%;background:var(--surface2);color:var(--white);
+  border:1px solid rgba(255,255,255,.1);border-radius:12px;
+  padding:12px 14px;font-size:14px;font-family:'Inter',sans-serif;outline:none;
+  transition:border-color .2s;appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237A7A9A' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;padding-right:36px;
+}
+.tmpl-select:focus{border-color:var(--cyan);}
+.tmpl-preview-box{
+  background:var(--card-bg);border:1px solid var(--surface2);
+  border-radius:18px;padding:20px;text-align:center;margin-bottom:16px;
+  min-height:340px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  position:relative;
+}
+.tmpl-placeholder{color:var(--muted);font-size:13px;line-height:1.6;}
+.tmpl-placeholder .tp-icon{font-size:40px;margin-bottom:10px;}
+.tmpl-phone-name{
+  font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:1.5px;
+  color:var(--cyan);margin-bottom:14px;
+}
+#tmplSVG{max-width:220px;width:100%;}
+.tmpl-legend{
+  display:flex;flex-wrap:wrap;gap:8px;justify-content:center;
+  margin-top:14px;font-size:10px;
+}
+.leg-item{display:flex;align-items:center;gap:5px;color:var(--muted);}
+.leg-dot{width:10px;height:10px;border-radius:50%;}
+.tmpl-actions{display:flex;flex-direction:column;gap:10px;margin-bottom:20px;}
+.tmpl-dl-btn{
+  background:linear-gradient(135deg,#003A8C,var(--cyan));
+  color:#000;border:none;border-radius:12px;padding:14px;font-size:14px;
+  font-weight:800;cursor:pointer;width:100%;transition:transform .15s,box-shadow .15s;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+}
+.tmpl-dl-btn:hover{transform:translateY(-2px);box-shadow:var(--glow-cyan);}
+.tmpl-dl-btn:disabled{background:var(--surface2);color:var(--muted);cursor:not-allowed;transform:none;box-shadow:none;}
+.tmpl-wa-btn{
+  background:rgba(0,255,136,.12);color:var(--green);border:1px solid rgba(0,255,136,.3);
+  border-radius:12px;padding:13px;font-size:13px;font-weight:700;cursor:pointer;
+  width:100%;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:8px;
+}
+.tmpl-wa-btn:hover{background:rgba(0,255,136,.22);}
+.tmpl-info-cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px;}
+.tmpl-info-card{background:var(--surface);border-radius:12px;padding:14px 12px;text-align:center;}
+.tic-icon{font-size:22px;margin-bottom:5px;}
+.tic-title{font-size:11px;font-weight:700;color:var(--white);margin-bottom:3px;}
+.tic-sub{font-size:10px;color:var(--muted);line-height:1.4;}
+.tmpl-how{background:var(--surface);border-radius:14px;padding:16px;margin-bottom:20px;}
+.how-title{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:1px;margin-bottom:12px;}
+.how-step{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px;}
+.how-num{
+  min-width:26px;height:26px;background:var(--magenta);border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:900;flex-shrink:0;
+}
+.how-text{font-size:12px;color:var(--muted);line-height:1.5;padding-top:4px;}
+/* cutout color key */
+.cut-body{fill:none;stroke:rgba(0,245,255,.9);stroke-width:2;}
+.cut-screen{fill:rgba(0,245,255,.06);stroke:rgba(0,245,255,.5);stroke-width:1.2;}
+.cut-camera{fill:rgba(255,0,110,.15);stroke:rgba(255,0,110,.8);stroke-width:1.2;}
+.cut-hole{fill:rgba(255,183,0,.12);stroke:rgba(255,183,0,.8);stroke-width:1;}
+.cut-btn{fill:rgba(100,100,255,.15);stroke:rgba(130,130,255,.8);stroke-width:1;}
+.cut-label{font-family:'Inter',sans-serif;font-size:7px;fill:rgba(255,255,255,.45);}
+.cut-dim{font-family:'Inter',sans-serif;font-size:6.5px;fill:rgba(0,245,255,.6);}
+.cut-crosshair{stroke:rgba(255,255,255,.2);stroke-width:.5;stroke-dasharray:2,2;}
+
 /* ── TRUST ─────────────────────────────────────────── */
 .trust{padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:10px;}
 .trust-card{background:var(--surface);border-radius:12px;padding:14px 12px;text-align:center;}
@@ -667,6 +748,76 @@ footer .soc-btn{width:36px;height:36px;background:var(--surface2);border-radius:
   </div>
 </div>
 
+<!-- ╔══════════════════════════════════════════════════════════╗
+     ║              SKIN TEMPLATE CUTOUT VIEW                  ║
+     ╚══════════════════════════════════════════════════════════╝ -->
+<div class="view" id="view-template">
+  <div class="tmpl-wrap">
+    <div class="tmpl-hero">
+      <div class="badge-hot" style="background:var(--cyan);color:#000;">✂️ CUTOUT TEMPLATES</div>
+      <div class="tmpl-hero-title">SKIN <span>TEMPLATE</span></div>
+      <div class="tmpl-hero-sub">Precision SVG cutouts for every phone model.<br>Download, print at exact scale & cut your vinyl perfectly.</div>
+    </div>
+
+    <div class="tmpl-selectors">
+      <div>
+        <div class="tmpl-sel-label">SELECT BRAND</div>
+        <select class="tmpl-select" id="tmplBrand" onchange="tmplLoadBrand()">
+          <option value="">— Choose Brand —</option>
+        </select>
+      </div>
+      <div>
+        <div class="tmpl-sel-label">SELECT MODEL</div>
+        <select class="tmpl-select" id="tmplModel" onchange="tmplRender()" disabled>
+          <option value="">— Choose Model —</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="tmpl-preview-box" id="tmplPreviewBox">
+      <div class="tmpl-placeholder" id="tmplPlaceholder">
+        <div class="tp-icon">✂️</div>
+        <div>Select your phone brand & model<br>to see the precision cutout template</div>
+      </div>
+      <div id="tmplResult" style="display:none;width:100%;">
+        <div class="tmpl-phone-name" id="tmplPhoneName"></div>
+        <svg id="tmplSVG" viewBox="0 0 220 440" xmlns="http://www.w3.org/2000/svg"></svg>
+        <div class="tmpl-legend">
+          <div class="leg-item"><div class="leg-dot" style="background:rgba(0,245,255,.9)"></div>Body outline</div>
+          <div class="leg-item"><div class="leg-dot" style="background:rgba(0,245,255,.4)"></div>Screen</div>
+          <div class="leg-item"><div class="leg-dot" style="background:rgba(255,0,110,.8)"></div>Camera</div>
+          <div class="leg-item"><div class="leg-dot" style="background:rgba(255,183,0,.8)"></div>Ports/Speaker</div>
+          <div class="leg-item"><div class="leg-dot" style="background:rgba(130,130,255,.8)"></div>Buttons</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tmpl-actions">
+      <button class="tmpl-dl-btn" id="tmplDlBtn" onclick="downloadTemplate()" disabled>
+        <span>⬇️</span> Download SVG Template
+      </button>
+      <button class="tmpl-wa-btn" onclick="tmplOrderViaWA()">
+        💬 Order Skin for My Phone via WhatsApp
+      </button>
+    </div>
+
+    <div class="tmpl-info-cards">
+      <div class="tmpl-info-card"><div class="tic-icon">🎯</div><div class="tic-title">Precision Fit</div><div class="tic-sub">Every cutout measured to exact mm specs</div></div>
+      <div class="tmpl-info-card"><div class="tic-icon">✂️</div><div class="tic-title">Print & Cut</div><div class="tic-sub">Print at 100% scale, cut with scissors</div></div>
+      <div class="tmpl-info-card"><div class="tic-icon">📐</div><div class="tic-title">SVG Format</div><div class="tic-sub">Scalable vector — use in Cricut, Silhouette</div></div>
+      <div class="tmpl-info-card"><div class="tic-icon">🆓</div><div class="tic-title">Free Download</div><div class="tic-sub">Templates are free for all SkinRiot customers</div></div>
+    </div>
+
+    <div class="tmpl-how">
+      <div class="how-title">HOW TO USE</div>
+      <div class="how-step"><div class="how-num">1</div><div class="how-text">Select your phone brand and model above to generate the precision template</div></div>
+      <div class="how-step"><div class="how-num">2</div><div class="how-text">Download the SVG file and print it at <b style="color:var(--white)">100% scale (no scaling)</b> on A4 paper</div></div>
+      <div class="how-step"><div class="how-num">3</div><div class="how-text">Place your vinyl lamination over the printout and cut along the outline with precision scissors or a craft knife</div></div>
+      <div class="how-step"><div class="how-num">4</div><div class="how-text">Apply to your phone — start from the top, press out air bubbles towards the edges</div></div>
+    </div>
+  </div>
+</div>
+
 <!-- ═══ BOTTOM NAV ════════════════════════════════════════════ -->
 <div class="bottom-nav">
   <div class="bnav-item active" id="bnav-home" onclick="switchView('home')">
@@ -674,6 +825,9 @@ footer .soc-btn{width:36px;height:36px;background:var(--surface2);border-radius:
   </div>
   <div class="bnav-item" id="bnav-search" onclick="switchView('search')">
     <div class="bnav-icon">🔍</div><div class="bnav-label">SEARCH</div>
+  </div>
+  <div class="bnav-item" id="bnav-template" onclick="switchView('template')">
+    <div class="bnav-icon">✂️</div><div class="bnav-label">TEMPLATE</div>
   </div>
   <div class="bnav-item" id="bnav-cart" onclick="switchView('cart')">
     <div class="bnav-icon">🛒</div>
@@ -923,6 +1077,7 @@ function switchView(name) {
   if (name === 'search') initSearch();
   if (name === 'cart')   renderCart();
   if (name === 'account') renderOrders();
+  if (name === 'template') initTemplate();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -1313,6 +1468,403 @@ function toast(msg) {
 
 // ═══════════════════════════════════════════════════════════════════
 //  INIT
+// ═══════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════
+//  SKIN TEMPLATE CUTOUT ENGINE
+// ═══════════════════════════════════════════════════════════════════
+
+// Phone specs: [bodyW, bodyH, cornerR, screenX, screenY, screenW, screenH,
+//               cameras:[{x,y,w,h,r,shape}], ports:[{x,y,w,h,r,pos}],
+//               btns:[{x,y,w,h,side}], hasFrontCam, hasDynamicIsland, hasNotch]
+// All in SVG units (220 wide × 440 tall canvas, body centered)
+
+const PHONE_SPECS = {
+  // ── APPLE ──────────────────────────────────────────────────────
+  'iPhone 16 Pro Max': {
+    bw:210,bh:430,cr:22,sw:166,sh:360,sx:22,sy:35,
+    cameras:[{x:26,y:36,w:78,h:78,r:22,shape:'island',label:'Camera Island'}],
+    ports:[{x:88,y:425,w:34,h:6,r:3,pos:'bottom',label:'USB-C'},
+           {x:20,y:425,w:18,h:6,r:3,pos:'bottom',label:'Speaker'},
+           {x:172,y:425,w:18,h:6,r:3,pos:'bottom',label:'Speaker'}],
+    btns:[{x:0,y:120,w:4,h:28,side:'left',label:'Vol+'},
+          {x:0,y:156,w:4,h:28,side:'left',label:'Vol−'},
+          {x:0,y:90,w:4,h:16,side:'left',label:'Silent'},
+          {x:206,y:130,w:4,h:56,side:'right',label:'Power'}],
+    di:true, dims:'163×77.6mm'
+  },
+  'iPhone 16 Pro': {
+    bw:198,bh:415,cr:22,sw:154,sh:346,sx:22,sy:34,
+    cameras:[{x:25,y:35,w:72,h:72,r:20,shape:'island',label:'Camera Island'}],
+    ports:[{x:82,y:410,w:34,h:6,r:3,pos:'bottom',label:'USB-C'},
+           {x:18,y:410,w:16,h:6,r:3,pos:'bottom',label:'Speaker'},
+           {x:164,y:410,w:16,h:6,r:3,pos:'bottom',label:'Speaker'}],
+    btns:[{x:0,y:116,w:4,h:26,side:'left',label:'Vol+'},
+          {x:0,y:150,w:4,h:26,side:'left',label:'Vol−'},
+          {x:0,y:88,w:4,h:14,side:'left',label:'Silent'},
+          {x:194,y:124,w:4,h:52,side:'right',label:'Power'}],
+    di:true, dims:'149.6×71.5mm'
+  },
+  'iPhone 16 Plus': {
+    bw:208,bh:428,cr:22,sw:164,sh:358,sx:22,sy:35,
+    cameras:[{x:30,y:42,w:50,h:50,r:14,shape:'rect',label:'Dual Cam'},
+             {x:86,y:42,w:28,h:28,r:8,shape:'circle',label:'Flash'}],
+    ports:[{x:86,y:422,w:36,h:6,r:3,pos:'bottom',label:'USB-C'},
+           {x:18,y:422,w:18,h:6,r:3,pos:'bottom',label:'Speaker'},
+           {x:172,y:422,w:18,h:6,r:3,pos:'bottom',label:'Speaker'}],
+    btns:[{x:0,y:118,w:4,h:26,side:'left',label:'Vol+'},
+          {x:0,y:152,w:4,h:26,side:'left',label:'Vol−'},
+          {x:0,y:88,w:4,h:16,side:'left',label:'Silent'},
+          {x:204,y:126,w:4,h:54,side:'right',label:'Power'}],
+    di:false, notch:true, dims:'160.9×77.8mm'
+  },
+  'iPhone 16': {
+    bw:196,bh:414,cr:22,sw:152,sh:344,sx:22,sy:35,
+    cameras:[{x:28,y:42,w:46,h:46,r:14,shape:'rect',label:'Dual Cam'},
+             {x:80,y:42,w:26,h:26,r:8,shape:'circle',label:'Flash'}],
+    ports:[{x:80,y:408,w:36,h:6,r:3,pos:'bottom',label:'USB-C'},
+           {x:16,y:408,w:16,h:6,r:3,pos:'bottom',label:'Speaker'},
+           {x:164,y:408,w:16,h:6,r:3,pos:'bottom',label:'Speaker'}],
+    btns:[{x:0,y:112,w:4,h:24,side:'left',label:'Vol+'},
+          {x:0,y:144,w:4,h:24,side:'left',label:'Vol−'},
+          {x:0,y:86,w:4,h:14,side:'left',label:'Silent'},
+          {x:192,y:118,w:4,h:52,side:'right',label:'Power'}],
+    di:false, notch:true, dims:'147.6×71.6mm'
+  },
+  'iPhone 15 Pro Max': {
+    bw:210,bh:430,cr:22,sw:166,sh:360,sx:22,sy:35,
+    cameras:[{x:26,y:36,w:78,h:78,r:22,shape:'island',label:'Camera Island'}],
+    ports:[{x:88,y:424,w:34,h:6,r:3,pos:'bottom',label:'USB-C'},
+           {x:20,y:424,w:18,h:6,r:3,pos:'bottom'},
+           {x:172,y:424,w:18,h:6,r:3,pos:'bottom'}],
+    btns:[{x:0,y:120,w:4,h:28,side:'left'},{x:0,y:156,w:4,h:28,side:'left'},
+          {x:0,y:90,w:4,h:16,side:'left'},{x:206,y:130,w:4,h:56,side:'right'}],
+    di:true, dims:'159.9×76.7mm'
+  },
+  'iPhone 15 Pro': {
+    bw:198,bh:415,cr:22,sw:154,sh:346,sx:22,sy:34,
+    cameras:[{x:25,y:35,w:72,h:72,r:20,shape:'island',label:'Camera Island'}],
+    ports:[{x:82,y:409,w:34,h:6,r:3,pos:'bottom',label:'USB-C'},
+           {x:18,y:409,w:16,h:6,r:3,pos:'bottom'},{x:164,y:409,w:16,h:6,r:3,pos:'bottom'}],
+    btns:[{x:0,y:116,w:4,h:26,side:'left'},{x:0,y:150,w:4,h:26,side:'left'},
+          {x:0,y:88,w:4,h:14,side:'left'},{x:194,y:124,w:4,h:52,side:'right'}],
+    di:true, dims:'146.6×70.6mm'
+  },
+  'iPhone 15 Plus': {
+    bw:208,bh:428,cr:22,sw:164,sh:358,sx:22,sy:35,
+    cameras:[{x:30,y:42,w:50,h:50,r:14,shape:'rect'},{x:86,y:46,w:22,h:22,r:11,shape:'circle'}],
+    ports:[{x:86,y:422,w:36,h:6,r:3,pos:'bottom',label:'USB-C'},{x:18,y:422,w:18,h:6,r:3,pos:'bottom'},{x:172,y:422,w:18,h:6,r:3,pos:'bottom'}],
+    btns:[{x:0,y:118,w:4,h:26,side:'left'},{x:0,y:152,w:4,h:26,side:'left'},{x:0,y:88,w:4,h:16,side:'left'},{x:204,y:126,w:4,h:54,side:'right'}],
+    di:false,notch:true,dims:'160.9×77.8mm'
+  },
+  'iPhone 15': {
+    bw:196,bh:414,cr:22,sw:152,sh:344,sx:22,sy:35,
+    cameras:[{x:28,y:42,w:46,h:46,r:14,shape:'rect'},{x:80,y:46,w:22,h:22,r:11,shape:'circle'}],
+    ports:[{x:80,y:408,w:36,h:6,r:3,pos:'bottom',label:'USB-C'},{x:16,y:408,w:16,h:6,r:3,pos:'bottom'},{x:164,y:408,w:16,h:6,r:3,pos:'bottom'}],
+    btns:[{x:0,y:112,w:4,h:24,side:'left'},{x:0,y:144,w:4,h:24,side:'left'},{x:0,y:86,w:4,h:14,side:'left'},{x:192,y:118,w:4,h:52,side:'right'}],
+    di:false,notch:true,dims:'147.6×71.6mm'
+  },
+  'iPhone 14 Pro Max':{bw:210,bh:430,cr:22,sw:166,sh:360,sx:22,sy:35,cameras:[{x:26,y:36,w:78,h:78,r:22,shape:'island',label:'Camera Island'}],ports:[{x:88,y:424,w:34,h:6,r:3,pos:'bottom',label:'Lightning'},{x:18,y:424,w:20,h:6,r:3,pos:'bottom'},{x:172,y:424,w:20,h:6,r:3,pos:'bottom'}],btns:[{x:0,y:120,w:4,h:28,side:'left'},{x:0,y:156,w:4,h:28,side:'left'},{x:0,y:90,w:4,h:16,side:'left'},{x:206,y:130,w:4,h:56,side:'right'}],di:true,dims:'160.7×77.6mm'},
+  'iPhone 14 Pro':{bw:198,bh:415,cr:22,sw:154,sh:346,sx:22,sy:34,cameras:[{x:25,y:35,w:72,h:72,r:20,shape:'island',label:'Camera Island'}],ports:[{x:82,y:409,w:34,h:6,r:3,pos:'bottom',label:'Lightning'},{x:18,y:409,w:16,h:6,r:3,pos:'bottom'},{x:164,y:409,w:16,h:6,r:3,pos:'bottom'}],btns:[{x:0,y:116,w:4,h:26,side:'left'},{x:0,y:150,w:4,h:26,side:'left'},{x:0,y:88,w:4,h:14,side:'left'},{x:194,y:124,w:4,h:52,side:'right'}],di:true,dims:'147.5×71.5mm'},
+  'iPhone 14':{bw:196,bh:414,cr:22,sw:152,sh:344,sx:22,sy:35,cameras:[{x:28,y:42,w:46,h:46,r:14,shape:'rect'},{x:80,y:46,w:22,h:22,r:11,shape:'circle'}],ports:[{x:80,y:408,w:36,h:6,r:3,pos:'bottom',label:'Lightning'},{x:16,y:408,w:16,h:6,r:3,pos:'bottom'},{x:164,y:408,w:16,h:6,r:3,pos:'bottom'}],btns:[{x:0,y:112,w:4,h:24,side:'left'},{x:0,y:144,w:4,h:24,side:'left'},{x:0,y:86,w:4,h:14,side:'left'},{x:192,y:118,w:4,h:52,side:'right'}],notch:true,dims:'146.7×71.5mm'},
+  'iPhone 13 Pro Max':{bw:210,bh:430,cr:22,sw:166,sh:360,sx:22,sy:35,cameras:[{x:22,y:36,w:82,h:82,r:18,shape:'triple',label:'Triple Cam'}],ports:[{x:88,y:424,w:34,h:6,r:3,pos:'bottom',label:'Lightning'},{x:18,y:424,w:20,h:6,r:3,pos:'bottom'},{x:172,y:424,w:20,h:6,r:3,pos:'bottom'}],btns:[{x:0,y:120,w:4,h:28,side:'left'},{x:0,y:156,w:4,h:28,side:'left'},{x:0,y:90,w:4,h:16,side:'left'},{x:206,y:130,w:4,h:56,side:'right'}],notch:true,dims:'160.8×78.1mm'},
+  'iPhone 13 Pro':{bw:198,bh:415,cr:22,sw:154,sh:346,sx:22,sy:34,cameras:[{x:20,y:36,w:74,h:74,r:18,shape:'triple',label:'Triple Cam'}],ports:[{x:82,y:409,w:34,h:6,r:3,pos:'bottom',label:'Lightning'},{x:18,y:409,w:16,h:6,r:3,pos:'bottom'},{x:164,y:409,w:16,h:6,r:3,pos:'bottom'}],btns:[{x:0,y:116,w:4,h:26,side:'left'},{x:0,y:150,w:4,h:26,side:'left'},{x:0,y:88,w:4,h:14,side:'left'},{x:194,y:124,w:4,h:52,side:'right'}],notch:true,dims:'146.7×71.5mm'},
+  'iPhone 13':{bw:196,bh:414,cr:22,sw:152,sh:344,sx:22,sy:35,cameras:[{x:30,y:40,w:50,h:50,r:14,shape:'rect'},{x:88,y:46,w:20,h:20,r:10,shape:'circle'}],ports:[{x:80,y:408,w:36,h:6,r:3,pos:'bottom',label:'Lightning'},{x:16,y:408,w:16,h:6,r:3,pos:'bottom'},{x:164,y:408,w:16,h:6,r:3,pos:'bottom'}],btns:[{x:0,y:112,w:4,h:24,side:'left'},{x:0,y:144,w:4,h:24,side:'left'},{x:0,y:86,w:4,h:14,side:'left'},{x:192,y:118,w:4,h:52,side:'right'}],notch:true,dims:'146.7×71.5mm'},
+  'iPhone 12 Pro Max':{bw:210,bh:430,cr:20,sw:166,sh:360,sx:22,sy:35,cameras:[{x:22,y:36,w:78,h:78,r:18,shape:'triple',label:'Triple Cam'}],ports:[{x:88,y:424,w:34,h:6,r:3,pos:'bottom',label:'Lightning'},{x:18,y:424,w:20,h:6,r:3,pos:'bottom'},{x:172,y:424,w:20,h:6,r:3,pos:'bottom'}],btns:[{x:0,y:120,w:4,h:28,side:'left'},{x:0,y:156,w:4,h:28,side:'left'},{x:0,y:90,w:4,h:16,side:'left'},{x:206,y:130,w:4,h:56,side:'right'}],notch:true,dims:'160.8×78.1mm'},
+  'iPhone 12':{bw:196,bh:414,cr:20,sw:152,sh:344,sx:22,sy:35,cameras:[{x:28,y:42,w:44,h:44,r:12,shape:'rect'},{x:78,y:46,w:20,h:20,r:10,shape:'circle'}],ports:[{x:80,y:408,w:36,h:6,r:3,pos:'bottom',label:'Lightning'},{x:16,y:408,w:16,h:6,r:3,pos:'bottom'},{x:164,y:408,w:16,h:6,r:3,pos:'bottom'}],btns:[{x:0,y:112,w:4,h:24,side:'left'},{x:0,y:144,w:4,h:24,side:'left'},{x:0,y:86,w:4,h:14,side:'left'},{x:192,y:118,w:4,h:52,side:'right'}],notch:true,dims:'146.7×71.5mm'},
+
+  // ── SAMSUNG ─────────────────────────────────────────────────────
+  'Galaxy S25 Ultra':{bw:208,bh:436,cr:12,sw:186,sh:400,sx:11,sy:18,cameras:[{x:152,y:26,w:42,h:100,r:10,shape:'rectv',label:'Quad Cam'}],ports:[{x:84,y:430,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:14,y:430,w:18,h:6,r:3,pos:'bottom'},{x:172,y:430,w:18,h:6,r:3,pos:'bottom'}],btns:[{x:204,y:130,w:4,h:26,side:'right',label:'Vol'},{x:204,y:164,w:4,h:26,side:'right',label:'Vol−'},{x:204,y:96,w:4,h:22,side:'right',label:'Power'}],punchhole:{x:104,y:26,r:4},dims:'162.8×79mm'},
+  'Galaxy S25+':{bw:200,bh:426,cr:14,sw:178,sh:390,sx:11,sy:18,cameras:[{x:152,y:26,w:36,h:88,r:10,shape:'rectv',label:'Triple Cam'}],ports:[{x:80,y:420,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:12,y:420,w:16,h:6,r:3,pos:'bottom'},{x:166,y:420,w:16,h:6,r:3,pos:'bottom'}],btns:[{x:196,y:126,w:4,h:24,side:'right'},{x:196,y:158,w:4,h:24,side:'right'},{x:196,y:94,w:4,h:20,side:'right'}],punchhole:{x:100,y:24,r:4},dims:'158.4×75.8mm'},
+  'Galaxy S25':{bw:190,bh:410,cr:16,sw:168,sh:374,sx:11,sy:18,cameras:[{x:142,y:24,w:34,h:80,r:10,shape:'rectv',label:'Triple Cam'}],ports:[{x:75,y:404,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:404,w:14,h:6,r:3,pos:'bottom'},{x:162,y:404,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:186,y:118,w:4,h:22,side:'right'},{x:186,y:148,w:4,h:22,side:'right'},{x:186,y:88,w:4,h:18,side:'right'}],punchhole:{x:95,y:22,r:3.5},dims:'146.9×70.5mm'},
+  'Galaxy S24 Ultra':{bw:208,bh:436,cr:12,sw:186,sh:400,sx:11,sy:18,cameras:[{x:152,y:26,w:42,h:100,r:10,shape:'rectv',label:'Quad Cam'}],ports:[{x:84,y:430,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:14,y:430,w:18,h:6,r:3,pos:'bottom'},{x:172,y:430,w:18,h:6,r:3,pos:'bottom'}],btns:[{x:204,y:130,w:4,h:26,side:'right'},{x:204,y:164,w:4,h:26,side:'right'},{x:204,y:96,w:4,h:22,side:'right'}],punchhole:{x:104,y:26,r:4},dims:'162.3×79mm'},
+  'Galaxy S24+':{bw:200,bh:426,cr:14,sw:178,sh:390,sx:11,sy:18,cameras:[{x:152,y:26,w:36,h:88,r:10,shape:'rectv',label:'Triple Cam'}],ports:[{x:80,y:420,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:12,y:420,w:16,h:6,r:3,pos:'bottom'},{x:166,y:420,w:16,h:6,r:3,pos:'bottom'}],btns:[{x:196,y:126,w:4,h:24,side:'right'},{x:196,y:158,w:4,h:24,side:'right'},{x:196,y:94,w:4,h:20,side:'right'}],punchhole:{x:100,y:24,r:4},dims:'158.5×75.9mm'},
+  'Galaxy S24':{bw:190,bh:410,cr:16,sw:168,sh:374,sx:11,sy:18,cameras:[{x:142,y:24,w:34,h:80,r:10,shape:'rectv',label:'Triple Cam'}],ports:[{x:75,y:404,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:404,w:14,h:6,r:3,pos:'bottom'},{x:162,y:404,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:186,y:118,w:4,h:22,side:'right'},{x:186,y:148,w:4,h:22,side:'right'},{x:186,y:88,w:4,h:18,side:'right'}],punchhole:{x:95,y:22,r:3.5},dims:'147×70.6mm'},
+  'Galaxy S23 Ultra':{bw:206,bh:434,cr:12,sw:184,sh:398,sx:11,sy:18,cameras:[{x:150,y:24,w:42,h:100,r:10,shape:'rectv',label:'Quad Cam'}],ports:[{x:83,y:428,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:13,y:428,w:18,h:6,r:3,pos:'bottom'},{x:171,y:428,w:18,h:6,r:3,pos:'bottom'}],btns:[{x:202,y:128,w:4,h:24,side:'right'},{x:202,y:160,w:4,h:24,side:'right'},{x:202,y:94,w:4,h:20,side:'right'}],punchhole:{x:103,y:24,r:4},dims:'163.4×78.1mm'},
+  'Galaxy A55 5G':{bw:192,bh:420,cr:16,sw:170,sh:384,sx:11,sy:18,cameras:[{x:140,y:22,w:36,h:82,r:10,shape:'rectv',label:'Triple Cam'}],ports:[{x:76,y:414,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:414,w:14,h:6,r:3,pos:'bottom'},{x:164,y:414,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:188,y:120,w:4,h:22,side:'right'},{x:188,y:150,w:4,h:22,side:'right'},{x:188,y:90,w:4,h:18,side:'right'}],punchhole:{x:96,y:22,r:3.5},dims:'155×75.6mm'},
+  'Galaxy A35 5G':{bw:188,bh:414,cr:16,sw:166,sh:378,sx:11,sy:18,cameras:[{x:136,y:22,w:36,h:80,r:10,shape:'rectv',label:'Triple Cam'}],ports:[{x:74,y:408,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:408,w:14,h:6,r:3,pos:'bottom'},{x:160,y:408,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:184,y:118,w:4,h:22,side:'right'},{x:184,y:148,w:4,h:22,side:'right'},{x:184,y:88,w:4,h:18,side:'right'}],punchhole:{x:94,y:22,r:3.5},dims:'154×78.6mm'},
+  'Galaxy A25 5G':{bw:186,bh:408,cr:16,sw:164,sh:372,sx:11,sy:18,cameras:[{x:134,y:22,w:34,h:76,r:10,shape:'rectv',label:'Triple Cam'}],ports:[{x:73,y:402,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:402,w:14,h:6,r:3,pos:'bottom'},{x:158,y:402,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:182,y:116,w:4,h:22,side:'right'},{x:182,y:146,w:4,h:22,side:'right'},{x:182,y:86,w:4,h:18,side:'right'}],punchhole:{x:93,y:22,r:3.5},dims:'160.1×76.5mm'},
+  'Galaxy A15':{bw:184,bh:404,cr:14,sw:162,sh:368,sx:11,sy:18,cameras:[{x:132,y:22,w:32,h:70,r:10,shape:'rectv',label:'Triple Cam'}],ports:[{x:72,y:398,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:398,w:14,h:6,r:3,pos:'bottom'},{x:156,y:398,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:180,y:114,w:4,h:22,side:'right'},{x:180,y:144,w:4,h:22,side:'right'},{x:180,y:84,w:4,h:18,side:'right'}],punchhole:{x:92,y:22,r:3},dims:'160.1×76.5mm'},
+  'Galaxy M55 5G':{bw:192,bh:420,cr:16,sw:170,sh:384,sx:11,sy:18,cameras:[{x:138,y:22,w:36,h:80,r:10,shape:'rectv',label:'Triple Cam'}],ports:[{x:76,y:414,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:414,w:14,h:6,r:3,pos:'bottom'},{x:164,y:414,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:188,y:120,w:4,h:22,side:'right'},{x:188,y:150,w:4,h:22,side:'right'},{x:188,y:90,w:4,h:18,side:'right'}],punchhole:{x:96,y:22,r:3.5},dims:'161.7×74.7mm'},
+  'Galaxy M35 5G':{bw:186,bh:408,cr:16,sw:164,sh:372,sx:11,sy:18,cameras:[{x:134,y:22,w:34,h:76,r:10,shape:'rectv',label:'Triple Cam'}],ports:[{x:73,y:402,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:402,w:14,h:6,r:3,pos:'bottom'},{x:158,y:402,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:182,y:116,w:4,h:22,side:'right'},{x:182,y:146,w:4,h:22,side:'right'},{x:182,y:86,w:4,h:18,side:'right'}],punchhole:{x:93,y:22,r:3.5},dims:'160.9×75.5mm'},
+  'Galaxy F55 5G':{bw:186,bh:408,cr:14,sw:164,sh:372,sx:11,sy:18,cameras:[{x:132,y:22,w:34,h:76,r:10,shape:'rectv',label:'Triple Cam'}],ports:[{x:73,y:402,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:402,w:14,h:6,r:3,pos:'bottom'},{x:158,y:402,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:182,y:116,w:4,h:22,side:'right'},{x:182,y:146,w:4,h:22,side:'right'},{x:182,y:86,w:4,h:18,side:'right'}],punchhole:{x:93,y:22,r:3.5},dims:'162.9×75mm'},
+  'Galaxy Z Fold 6':{bw:196,bh:430,cr:14,sw:174,sh:394,sx:11,sy:18,cameras:[{x:142,y:24,w:38,h:88,r:10,shape:'rectv',label:'Triple Cam'}],ports:[{x:78,y:424,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:424,w:14,h:6,r:3,pos:'bottom'},{x:166,y:424,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:192,y:122,w:4,h:22,side:'right'},{x:192,y:152,w:4,h:22,side:'right'},{x:192,y:92,w:4,h:18,side:'right'}],punchhole:{x:98,y:22,r:3.5},dims:'153.5×132.1mm (unfolded)'},
+  'Galaxy Z Flip 6':{bw:170,bh:370,cr:24,sw:148,sh:334,sx:11,sy:18,cameras:[{x:30,y:24,w:44,h:44,r:12,shape:'rect',label:'Dual Cam'}],ports:[{x:65,y:364,w:40,h:6,r:3,pos:'bottom',label:'USB-C'}],btns:[{x:166,y:110,w:4,h:22,side:'right'},{x:166,y:140,w:4,h:22,side:'right'}],punchhole:{x:85,y:22,r:3.5},dims:'85.1×71.9mm (folded)'},
+
+  // ── ONEPLUS ──────────────────────────────────────────────────────
+  'OnePlus 13':{bw:200,bh:428,cr:18,sw:178,sh:392,sx:11,sy:18,cameras:[{x:14,y:22,w:78,h:78,r:39,shape:'circle-module',label:'Hasselblad Cam'}],ports:[{x:80,y:422,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:422,w:14,h:6,r:3,pos:'bottom'},{x:168,y:422,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:0,y:118,w:4,h:22,side:'left',label:'Vol'},{x:0,y:148,w:4,h:22,side:'left',label:'Vol−'},{x:196,y:126,w:4,h:20,side:'right',label:'Power'},{x:196,y:90,w:4,h:24,side:'right',label:'Alert'}],punchhole:{x:100,y:22,r:3.5},dims:'162.9×76.5mm'},
+  'OnePlus 12':{bw:196,bh:422,cr:18,sw:174,sh:386,sx:11,sy:18,cameras:[{x:12,y:20,w:74,h:74,r:37,shape:'circle-module',label:'Hasselblad Cam'}],ports:[{x:78,y:416,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:416,w:14,h:6,r:3,pos:'bottom'},{x:164,y:416,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:0,y:116,w:4,h:22,side:'left'},{x:0,y:146,w:4,h:22,side:'left'},{x:192,y:122,w:4,h:20,side:'right'},{x:192,y:88,w:4,h:22,side:'right'}],punchhole:{x:98,y:22,r:3.5},dims:'164.3×75.8mm'},
+  'OnePlus 12R':{bw:192,bh:416,cr:18,sw:170,sh:380,sx:11,sy:18,cameras:[{x:12,y:20,w:68,h:68,r:34,shape:'circle-module',label:'Triple Cam'}],ports:[{x:76,y:410,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:410,w:14,h:6,r:3,pos:'bottom'},{x:160,y:410,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:0,y:114,w:4,h:22,side:'left'},{x:0,y:144,w:4,h:22,side:'left'},{x:188,y:120,w:4,h:20,side:'right'},{x:188,y:86,w:4,h:22,side:'right'}],punchhole:{x:96,y:22,r:3.5},dims:'163.3×75.3mm'},
+  'OnePlus Nord 4':{bw:188,bh:412,cr:16,sw:166,sh:376,sx:11,sy:18,cameras:[{x:12,y:20,w:62,h:62,r:31,shape:'circle-module',label:'Dual Cam'}],ports:[{x:74,y:406,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:406,w:14,h:6,r:3,pos:'bottom'},{x:156,y:406,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:0,y:112,w:4,h:22,side:'left'},{x:0,y:142,w:4,h:22,side:'left'},{x:184,y:118,w:4,h:20,side:'right'},{x:184,y:84,w:4,h:22,side:'right'}],punchhole:{x:94,y:22,r:3.5},dims:'162.6×75mm'},
+  'OnePlus Nord CE 4':{bw:186,bh:408,cr:16,sw:164,sh:372,sx:11,sy:18,cameras:[{x:12,y:20,w:58,h:58,r:29,shape:'circle-module',label:'Dual Cam'}],ports:[{x:73,y:402,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:402,w:14,h:6,r:3,pos:'bottom'},{x:158,y:402,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:0,y:110,w:4,h:22,side:'left'},{x:0,y:140,w:4,h:22,side:'left'},{x:182,y:116,w:4,h:20,side:'right'}],punchhole:{x:93,y:22,r:3},dims:'162.4×75mm'},
+  'OnePlus Nord CE 4 Lite':{bw:184,bh:404,cr:14,sw:162,sh:368,sx:11,sy:18,cameras:[{x:12,y:20,w:54,h:54,r:10,shape:'rect',label:'Dual Cam'}],ports:[{x:72,y:398,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:398,w:14,h:6,r:3,pos:'bottom'},{x:156,y:398,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:0,y:108,w:4,h:22,side:'left'},{x:0,y:138,w:4,h:22,side:'left'},{x:180,y:114,w:4,h:20,side:'right'}],punchhole:{x:92,y:22,r:3},dims:'162.4×75mm'},
+  'OnePlus Open':{bw:198,bh:432,cr:16,sw:176,sh:396,sx:11,sy:18,cameras:[{x:12,y:20,w:72,h:72,r:36,shape:'circle-module',label:'Hasselblad Cam'}],ports:[{x:79,y:426,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:426,w:14,h:6,r:3,pos:'bottom'},{x:166,y:426,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:0,y:116,w:4,h:22,side:'left'},{x:0,y:146,w:4,h:22,side:'left'},{x:194,y:122,w:4,h:20,side:'right'},{x:194,y:88,w:4,h:22,side:'right'}],punchhole:{x:99,y:22,r:3.5},dims:'153.4×143.1mm (unfolded)'},
+
+  // ── REDMI / XIAOMI / POCO ─────────────────────────────────────
+  'Redmi Note 14 Pro+':{bw:194,bh:422,cr:16,sw:172,sh:386,sx:11,sy:18,cameras:[{x:136,y:22,w:40,h:88,r:12,shape:'rectv',label:'Triple Cam'}],ports:[{x:77,y:416,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:416,w:14,h:6,r:3,pos:'bottom'},{x:164,y:416,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:190,y:120,w:4,h:22,side:'right'},{x:190,y:150,w:4,h:22,side:'right'},{x:190,y:90,w:4,h:18,side:'right'}],punchhole:{x:97,y:22,r:3.5},dims:'162.9×74.9mm'},
+  'Redmi Note 14 Pro 5G':{bw:190,bh:416,cr:16,sw:168,sh:380,sx:11,sy:18,cameras:[{x:132,y:22,w:38,h:84,r:12,shape:'rectv',label:'Triple Cam'}],ports:[{x:75,y:410,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:410,w:14,h:6,r:3,pos:'bottom'},{x:162,y:410,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:186,y:118,w:4,h:22,side:'right'},{x:186,y:148,w:4,h:22,side:'right'},{x:186,y:88,w:4,h:18,side:'right'}],punchhole:{x:95,y:22,r:3.5},dims:'161.1×74.9mm'},
+  'Redmi Note 14':{bw:186,bh:408,cr:14,sw:164,sh:372,sx:11,sy:18,cameras:[{x:128,y:22,w:36,h:78,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:73,y:402,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:402,w:14,h:6,r:3,pos:'bottom'},{x:158,y:402,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:182,y:116,w:4,h:22,side:'right'},{x:182,y:146,w:4,h:22,side:'right'},{x:182,y:86,w:4,h:18,side:'right'}],punchhole:{x:93,y:22,r:3},dims:'162.3×75.1mm'},
+  'Redmi Note 13 Pro+':{bw:194,bh:422,cr:16,sw:172,sh:386,sx:11,sy:18,cameras:[{x:136,y:22,w:40,h:88,r:12,shape:'rectv',label:'Triple Cam'}],ports:[{x:77,y:416,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:416,w:14,h:6,r:3,pos:'bottom'},{x:164,y:416,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:190,y:120,w:4,h:22,side:'right'},{x:190,y:150,w:4,h:22,side:'right'},{x:190,y:90,w:4,h:18,side:'right'}],punchhole:{x:97,y:22,r:3.5},dims:'161.4×74.3mm'},
+  'Redmi Note 13 Pro 5G':{bw:190,bh:416,cr:16,sw:168,sh:380,sx:11,sy:18,cameras:[{x:132,y:22,w:38,h:84,r:12,shape:'rectv',label:'Triple Cam'}],ports:[{x:75,y:410,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:410,w:14,h:6,r:3,pos:'bottom'},{x:162,y:410,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:186,y:118,w:4,h:22,side:'right'},{x:186,y:148,w:4,h:22,side:'right'},{x:186,y:88,w:4,h:18,side:'right'}],punchhole:{x:95,y:22,r:3.5},dims:'161.1×74.9mm'},
+  'Redmi Note 13':{bw:186,bh:408,cr:14,sw:164,sh:372,sx:11,sy:18,cameras:[{x:128,y:22,w:36,h:78,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:73,y:402,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:402,w:14,h:6,r:3,pos:'bottom'},{x:158,y:402,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:182,y:116,w:4,h:22,side:'right'},{x:182,y:146,w:4,h:22,side:'right'},{x:182,y:86,w:4,h:18,side:'right'}],punchhole:{x:93,y:22,r:3},dims:'162.3×75.1mm'},
+  'Redmi 13C 5G':{bw:184,bh:402,cr:14,sw:162,sh:366,sx:11,sy:18,cameras:[{x:124,y:20,w:36,h:72,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:72,y:396,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:396,w:14,h:6,r:3,pos:'bottom'},{x:156,y:396,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:180,y:114,w:4,h:22,side:'right'},{x:180,y:144,w:4,h:22,side:'right'},{x:180,y:84,w:4,h:18,side:'right'}],punchhole:{x:92,y:20,r:3},dims:'168.6×77.8mm'},
+  'Redmi A3':{bw:180,bh:396,cr:12,sw:158,sh:360,sx:11,sy:18,cameras:[{x:120,y:20,w:32,h:66,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:70,y:390,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:390,w:14,h:6,r:3,pos:'bottom'},{x:152,y:390,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:176,y:110,w:4,h:22,side:'right'},{x:176,y:140,w:4,h:22,side:'right'},{x:176,y:80,w:4,h:18,side:'right'}],punchhole:{x:90,y:20,r:3},dims:'168.3×76.3mm'},
+  'Xiaomi 14 Ultra':{bw:202,bh:432,cr:16,sw:180,sh:396,sx:11,sy:18,cameras:[{x:12,y:18,w:86,h:86,r:43,shape:'circle-module',label:'Leica Quad Cam'}],ports:[{x:81,y:426,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:426,w:14,h:6,r:3,pos:'bottom'},{x:170,y:426,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:198,y:122,w:4,h:22,side:'right'},{x:198,y:152,w:4,h:22,side:'right'},{x:198,y:92,w:4,h:18,side:'right'}],punchhole:{x:101,y:22,r:3.5},dims:'161.4×75.3mm'},
+  'Xiaomi 14 Pro':{bw:198,bh:426,cr:16,sw:176,sh:390,sx:11,sy:18,cameras:[{x:12,y:18,w:80,h:80,r:40,shape:'circle-module',label:'Leica Triple Cam'}],ports:[{x:79,y:420,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:420,w:14,h:6,r:3,pos:'bottom'},{x:166,y:420,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:194,y:120,w:4,h:22,side:'right'},{x:194,y:150,w:4,h:22,side:'right'},{x:194,y:90,w:4,h:18,side:'right'}],punchhole:{x:99,y:22,r:3.5},dims:'161.4×74.1mm'},
+  'Xiaomi 14':{bw:190,bh:414,cr:16,sw:168,sh:378,sx:11,sy:18,cameras:[{x:12,y:18,w:72,h:72,r:36,shape:'circle-module',label:'Leica Triple Cam'}],ports:[{x:75,y:408,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:408,w:14,h:6,r:3,pos:'bottom'},{x:162,y:408,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:186,y:116,w:4,h:22,side:'right'},{x:186,y:146,w:4,h:22,side:'right'},{x:186,y:86,w:4,h:18,side:'right'}],punchhole:{x:95,y:22,r:3.5},dims:'152.8×71.5mm'},
+  'Xiaomi 13 Pro':{bw:198,bh:426,cr:16,sw:176,sh:390,sx:11,sy:18,cameras:[{x:12,y:18,w:80,h:80,r:40,shape:'circle-module',label:'Leica Triple Cam'}],ports:[{x:79,y:420,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:420,w:14,h:6,r:3,pos:'bottom'},{x:166,y:420,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:194,y:120,w:4,h:22,side:'right'},{x:194,y:150,w:4,h:22,side:'right'},{x:194,y:90,w:4,h:18,side:'right'}],punchhole:{x:99,y:22,r:3.5},dims:'162.9×74.6mm'},
+  'Xiaomi 13T Pro':{bw:196,bh:422,cr:16,sw:174,sh:386,sx:11,sy:18,cameras:[{x:12,y:18,w:76,h:76,r:38,shape:'circle-module',label:'Leica Triple Cam'}],ports:[{x:78,y:416,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:416,w:14,h:6,r:3,pos:'bottom'},{x:164,y:416,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:192,y:118,w:4,h:22,side:'right'},{x:192,y:148,w:4,h:22,side:'right'},{x:192,y:88,w:4,h:18,side:'right'}],punchhole:{x:98,y:22,r:3.5},dims:'162.2×75.7mm'},
+  'POCO X7 Pro':{bw:196,bh:420,cr:16,sw:174,sh:384,sx:11,sy:18,cameras:[{x:12,y:18,w:70,h:70,r:35,shape:'circle-module',label:'Triple Cam'}],ports:[{x:78,y:414,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:414,w:14,h:6,r:3,pos:'bottom'},{x:164,y:414,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:192,y:118,w:4,h:22,side:'right'},{x:192,y:148,w:4,h:22,side:'right'},{x:192,y:88,w:4,h:18,side:'right'}],punchhole:{x:98,y:22,r:3.5},dims:'162.3×76.1mm'},
+  'POCO X7':{bw:190,bh:412,cr:16,sw:168,sh:376,sx:11,sy:18,cameras:[{x:12,y:18,w:64,h:64,r:32,shape:'circle-module',label:'Triple Cam'}],ports:[{x:75,y:406,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:406,w:14,h:6,r:3,pos:'bottom'},{x:162,y:406,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:186,y:116,w:4,h:22,side:'right'},{x:186,y:146,w:4,h:22,side:'right'},{x:186,y:86,w:4,h:18,side:'right'}],punchhole:{x:95,y:22,r:3.5},dims:'161.9×75.5mm'},
+  'POCO F6 Pro':{bw:198,bh:424,cr:16,sw:176,sh:388,sx:11,sy:18,cameras:[{x:12,y:18,w:78,h:78,r:39,shape:'circle-module',label:'Triple Cam'}],ports:[{x:79,y:418,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:418,w:14,h:6,r:3,pos:'bottom'},{x:166,y:418,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:194,y:120,w:4,h:22,side:'right'},{x:194,y:150,w:4,h:22,side:'right'},{x:194,y:90,w:4,h:18,side:'right'}],punchhole:{x:99,y:22,r:3.5},dims:'163×76.7mm'},
+  'POCO F6':{bw:190,bh:412,cr:16,sw:168,sh:376,sx:11,sy:18,cameras:[{x:12,y:18,w:68,h:68,r:34,shape:'circle-module',label:'Dual Cam'}],ports:[{x:75,y:406,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:406,w:14,h:6,r:3,pos:'bottom'},{x:162,y:406,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:186,y:116,w:4,h:22,side:'right'},{x:186,y:146,w:4,h:22,side:'right'},{x:186,y:86,w:4,h:18,side:'right'}],punchhole:{x:95,y:22,r:3.5},dims:'161.1×74.9mm'},
+  'POCO M7 Pro 5G':{bw:186,bh:406,cr:14,sw:164,sh:370,sx:11,sy:18,cameras:[{x:130,y:20,w:36,h:78,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:73,y:400,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:400,w:14,h:6,r:3,pos:'bottom'},{x:158,y:400,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:182,y:116,w:4,h:22,side:'right'},{x:182,y:146,w:4,h:22,side:'right'},{x:182,y:86,w:4,h:18,side:'right'}],punchhole:{x:93,y:22,r:3},dims:'162.3×75mm'},
+  'POCO C75':{bw:180,bh:396,cr:12,sw:158,sh:360,sx:11,sy:18,cameras:[{x:120,y:18,w:34,h:70,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:70,y:390,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:390,w:14,h:6,r:3,pos:'bottom'},{x:152,y:390,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:176,y:112,w:4,h:22,side:'right'},{x:176,y:142,w:4,h:22,side:'right'},{x:176,y:82,w:4,h:18,side:'right'}],punchhole:{x:90,y:20,r:3},dims:'168.6×77.8mm'},
+
+  // ── VIVO ─────────────────────────────────────────────────────
+  'Vivo X200 Pro':{bw:200,bh:428,cr:16,sw:178,sh:392,sx:11,sy:18,cameras:[{x:12,y:18,w:82,h:82,r:41,shape:'circle-module',label:'Zeiss Quad Cam'}],ports:[{x:80,y:422,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:422,w:14,h:6,r:3,pos:'bottom'},{x:168,y:422,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:196,y:120,w:4,h:22,side:'right'},{x:196,y:150,w:4,h:22,side:'right'},{x:196,y:90,w:4,h:18,side:'right'}],punchhole:{x:100,y:22,r:3.5},dims:'164.5×77.1mm'},
+  'Vivo X200':{bw:192,bh:418,cr:16,sw:170,sh:382,sx:11,sy:18,cameras:[{x:12,y:18,w:74,h:74,r:37,shape:'circle-module',label:'Zeiss Triple Cam'}],ports:[{x:76,y:412,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:412,w:14,h:6,r:3,pos:'bottom'},{x:164,y:412,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:188,y:118,w:4,h:22,side:'right'},{x:188,y:148,w:4,h:22,side:'right'},{x:188,y:88,w:4,h:18,side:'right'}],punchhole:{x:96,y:22,r:3.5},dims:'163.1×75.9mm'},
+  'Vivo X100 Pro':{bw:198,bh:424,cr:16,sw:176,sh:388,sx:11,sy:18,cameras:[{x:12,y:18,w:80,h:80,r:40,shape:'circle-module',label:'Zeiss Triple Cam'}],ports:[{x:79,y:418,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:418,w:14,h:6,r:3,pos:'bottom'},{x:166,y:418,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:194,y:120,w:4,h:22,side:'right'},{x:194,y:150,w:4,h:22,side:'right'},{x:194,y:90,w:4,h:18,side:'right'}],punchhole:{x:99,y:22,r:3.5},dims:'164.9×76.4mm'},
+  'Vivo V40 Pro':{bw:192,bh:418,cr:16,sw:170,sh:382,sx:11,sy:18,cameras:[{x:12,y:18,w:74,h:74,r:37,shape:'circle-module',label:'Zeiss Dual Cam'}],ports:[{x:76,y:412,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:412,w:14,h:6,r:3,pos:'bottom'},{x:164,y:412,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:188,y:118,w:4,h:22,side:'right'},{x:188,y:148,w:4,h:22,side:'right'},{x:188,y:88,w:4,h:18,side:'right'}],punchhole:{x:96,y:22,r:3.5},dims:'163.1×75.9mm'},
+  'Vivo V40':{bw:188,bh:412,cr:16,sw:166,sh:376,sx:11,sy:18,cameras:[{x:12,y:18,w:68,h:68,r:34,shape:'circle-module',label:'Zeiss Dual Cam'}],ports:[{x:74,y:406,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:406,w:14,h:6,r:3,pos:'bottom'},{x:160,y:406,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:184,y:116,w:4,h:22,side:'right'},{x:184,y:146,w:4,h:22,side:'right'},{x:184,y:86,w:4,h:18,side:'right'}],punchhole:{x:94,y:22,r:3.5},dims:'163.1×75.2mm'},
+  'Vivo V30 Pro':{bw:190,bh:416,cr:16,sw:168,sh:380,sx:11,sy:18,cameras:[{x:12,y:18,w:72,h:72,r:36,shape:'circle-module',label:'Zeiss Triple Cam'}],ports:[{x:75,y:410,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:410,w:14,h:6,r:3,pos:'bottom'},{x:162,y:410,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:186,y:118,w:4,h:22,side:'right'},{x:186,y:148,w:4,h:22,side:'right'},{x:186,y:88,w:4,h:18,side:'right'}],punchhole:{x:95,y:22,r:3.5},dims:'162.4×74.8mm'},
+  'Vivo V30':{bw:186,bh:408,cr:16,sw:164,sh:372,sx:11,sy:18,cameras:[{x:12,y:18,w:66,h:66,r:33,shape:'circle-module',label:'Dual Cam'}],ports:[{x:73,y:402,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:402,w:14,h:6,r:3,pos:'bottom'},{x:158,y:402,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:182,y:116,w:4,h:22,side:'right'},{x:182,y:146,w:4,h:22,side:'right'},{x:182,y:86,w:4,h:18,side:'right'}],punchhole:{x:93,y:22,r:3.5},dims:'162.4×74.4mm'},
+  'Vivo Y300 5G':{bw:186,bh:406,cr:14,sw:164,sh:370,sx:11,sy:18,cameras:[{x:130,y:20,w:36,h:76,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:73,y:400,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:400,w:14,h:6,r:3,pos:'bottom'},{x:158,y:400,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:182,y:114,w:4,h:22,side:'right'},{x:182,y:144,w:4,h:22,side:'right'},{x:182,y:84,w:4,h:18,side:'right'}],punchhole:{x:93,y:22,r:3},dims:'163.2×75.8mm'},
+  'Vivo Y200 5G':{bw:184,bh:402,cr:14,sw:162,sh:366,sx:11,sy:18,cameras:[{x:128,y:20,w:34,h:72,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:72,y:396,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:396,w:14,h:6,r:3,pos:'bottom'},{x:156,y:396,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:180,y:112,w:4,h:22,side:'right'},{x:180,y:142,w:4,h:22,side:'right'},{x:180,y:82,w:4,h:18,side:'right'}],punchhole:{x:92,y:22,r:3},dims:'162.4×74.7mm'},
+
+  // ── OPPO / iQOO ─────────────────────────────────────────────
+  'Oppo Find X8 Pro':{bw:200,bh:428,cr:16,sw:178,sh:392,sx:11,sy:18,cameras:[{x:12,y:18,w:82,h:82,r:41,shape:'circle-module',label:'Hasselblad Quad Cam'}],ports:[{x:80,y:422,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:422,w:14,h:6,r:3,pos:'bottom'},{x:168,y:422,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:196,y:120,w:4,h:22,side:'right'},{x:196,y:150,w:4,h:22,side:'right'},{x:196,y:90,w:4,h:18,side:'right'}],punchhole:{x:100,y:22,r:3.5},dims:'164.3×76.2mm'},
+  'Oppo Find X8':{bw:194,bh:422,cr:16,sw:172,sh:386,sx:11,sy:18,cameras:[{x:12,y:18,w:76,h:76,r:38,shape:'circle-module',label:'Hasselblad Triple Cam'}],ports:[{x:77,y:416,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:416,w:14,h:6,r:3,pos:'bottom'},{x:164,y:416,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:190,y:118,w:4,h:22,side:'right'},{x:190,y:148,w:4,h:22,side:'right'},{x:190,y:88,w:4,h:18,side:'right'}],punchhole:{x:97,y:22,r:3.5},dims:'161.7×75.1mm'},
+  'Oppo Reno 13 Pro':{bw:192,bh:418,cr:16,sw:170,sh:382,sx:11,sy:18,cameras:[{x:12,y:18,w:74,h:74,r:37,shape:'circle-module',label:'Triple Cam'}],ports:[{x:76,y:412,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:412,w:14,h:6,r:3,pos:'bottom'},{x:164,y:412,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:188,y:118,w:4,h:22,side:'right'},{x:188,y:148,w:4,h:22,side:'right'},{x:188,y:88,w:4,h:18,side:'right'}],punchhole:{x:96,y:22,r:3.5},dims:'162.2×75.4mm'},
+  'Oppo Reno 13':{bw:186,bh:410,cr:16,sw:164,sh:374,sx:11,sy:18,cameras:[{x:12,y:18,w:66,h:66,r:33,shape:'circle-module',label:'Dual Cam'}],ports:[{x:73,y:404,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:404,w:14,h:6,r:3,pos:'bottom'},{x:158,y:404,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:182,y:116,w:4,h:22,side:'right'},{x:182,y:146,w:4,h:22,side:'right'},{x:182,y:86,w:4,h:18,side:'right'}],punchhole:{x:93,y:22,r:3.5},dims:'161.5×74.9mm'},
+  'Oppo Reno 12 Pro':{bw:190,bh:414,cr:16,sw:168,sh:378,sx:11,sy:18,cameras:[{x:12,y:18,w:70,h:70,r:35,shape:'circle-module',label:'Triple Cam'}],ports:[{x:75,y:408,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:408,w:14,h:6,r:3,pos:'bottom'},{x:162,y:408,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:186,y:118,w:4,h:22,side:'right'},{x:186,y:148,w:4,h:22,side:'right'},{x:186,y:88,w:4,h:18,side:'right'}],punchhole:{x:95,y:22,r:3.5},dims:'161.5×74.3mm'},
+  'Oppo F27 Pro 5G':{bw:186,bh:406,cr:14,sw:164,sh:370,sx:11,sy:18,cameras:[{x:130,y:20,w:36,h:76,r:10,shape:'rectv',label:'Triple Cam'}],ports:[{x:73,y:400,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:400,w:14,h:6,r:3,pos:'bottom'},{x:158,y:400,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:182,y:114,w:4,h:22,side:'right'},{x:182,y:144,w:4,h:22,side:'right'},{x:182,y:84,w:4,h:18,side:'right'}],punchhole:{x:93,y:22,r:3},dims:'162.4×74.9mm'},
+  'Oppo A3 Pro':{bw:182,bh:400,cr:14,sw:160,sh:364,sx:11,sy:18,cameras:[{x:126,y:20,w:34,h:70,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:71,y:394,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:394,w:14,h:6,r:3,pos:'bottom'},{x:154,y:394,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:178,y:112,w:4,h:22,side:'right'},{x:178,y:142,w:4,h:22,side:'right'},{x:178,y:82,w:4,h:18,side:'right'}],punchhole:{x:91,y:20,r:3},dims:'163.4×75.1mm'},
+  'iQOO 13':{bw:198,bh:424,cr:16,sw:176,sh:388,sx:11,sy:18,cameras:[{x:12,y:18,w:80,h:80,r:40,shape:'circle-module',label:'Zeiss Triple Cam'}],ports:[{x:79,y:418,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:418,w:14,h:6,r:3,pos:'bottom'},{x:166,y:418,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:194,y:120,w:4,h:22,side:'right'},{x:194,y:150,w:4,h:22,side:'right'},{x:194,y:90,w:4,h:18,side:'right'}],punchhole:{x:99,y:22,r:3.5},dims:'163.3×76.6mm'},
+  'iQOO 12':{bw:194,bh:420,cr:16,sw:172,sh:384,sx:11,sy:18,cameras:[{x:12,y:18,w:76,h:76,r:38,shape:'circle-module',label:'Triple Cam'}],ports:[{x:77,y:414,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:414,w:14,h:6,r:3,pos:'bottom'},{x:164,y:414,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:190,y:118,w:4,h:22,side:'right'},{x:190,y:148,w:4,h:22,side:'right'},{x:190,y:88,w:4,h:18,side:'right'}],punchhole:{x:97,y:22,r:3.5},dims:'163.6×76.9mm'},
+  'iQOO Neo 10R':{bw:190,bh:414,cr:16,sw:168,sh:378,sx:11,sy:18,cameras:[{x:12,y:18,w:70,h:70,r:35,shape:'circle-module',label:'Dual Cam'}],ports:[{x:75,y:408,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:408,w:14,h:6,r:3,pos:'bottom'},{x:162,y:408,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:186,y:118,w:4,h:22,side:'right'},{x:186,y:148,w:4,h:22,side:'right'},{x:186,y:88,w:4,h:18,side:'right'}],punchhole:{x:95,y:22,r:3.5},dims:'162.7×76.5mm'},
+  'iQOO Neo 9 Pro':{bw:188,bh:410,cr:16,sw:166,sh:374,sx:11,sy:18,cameras:[{x:12,y:18,w:66,h:66,r:33,shape:'circle-module',label:'Dual Cam'}],ports:[{x:74,y:404,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:404,w:14,h:6,r:3,pos:'bottom'},{x:160,y:404,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:184,y:116,w:4,h:22,side:'right'},{x:184,y:146,w:4,h:22,side:'right'},{x:184,y:86,w:4,h:18,side:'right'}],punchhole:{x:94,y:22,r:3.5},dims:'163.5×76.7mm'},
+  'iQOO Z9 Pro 5G':{bw:186,bh:406,cr:14,sw:164,sh:370,sx:11,sy:18,cameras:[{x:130,y:20,w:36,h:76,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:73,y:400,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:400,w:14,h:6,r:3,pos:'bottom'},{x:158,y:400,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:182,y:114,w:4,h:22,side:'right'},{x:182,y:144,w:4,h:22,side:'right'},{x:182,y:84,w:4,h:18,side:'right'}],punchhole:{x:93,y:22,r:3},dims:'162.7×76.5mm'},
+  'iQOO Z9 Turbo':{bw:184,bh:402,cr:14,sw:162,sh:366,sx:11,sy:18,cameras:[{x:128,y:20,w:34,h:72,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:72,y:396,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:396,w:14,h:6,r:3,pos:'bottom'},{x:156,y:396,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:180,y:112,w:4,h:22,side:'right'},{x:180,y:142,w:4,h:22,side:'right'},{x:180,y:82,w:4,h:18,side:'right'}],punchhole:{x:92,y:22,r:3},dims:'162.7×76.3mm'},
+
+  // ── NOTHING ──────────────────────────────────────────────────
+  'Nothing Phone (3a) Pro':{bw:190,bh:416,cr:16,sw:168,sh:380,sx:11,sy:18,cameras:[{x:130,y:20,w:36,h:80,r:10,shape:'rectv',label:'Triple Cam + Glyph'}],ports:[{x:75,y:410,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:410,w:14,h:6,r:3,pos:'bottom'},{x:162,y:410,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:186,y:118,w:4,h:22,side:'right'},{x:186,y:148,w:4,h:22,side:'right'},{x:186,y:88,w:4,h:18,side:'right'}],punchhole:{x:95,y:22,r:3.5},dims:'162.1×76.7mm'},
+  'Nothing Phone (3a)':{bw:186,bh:410,cr:16,sw:164,sh:374,sx:11,sy:18,cameras:[{x:128,y:20,w:34,h:76,r:10,shape:'rectv',label:'Triple Cam'}],ports:[{x:73,y:404,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:404,w:14,h:6,r:3,pos:'bottom'},{x:158,y:404,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:182,y:116,w:4,h:22,side:'right'},{x:182,y:146,w:4,h:22,side:'right'},{x:182,y:86,w:4,h:18,side:'right'}],punchhole:{x:93,y:22,r:3},dims:'162.1×77.5mm'},
+  'Nothing Phone (2a) Plus':{bw:186,bh:408,cr:16,sw:164,sh:372,sx:11,sy:18,cameras:[{x:128,y:20,w:34,h:74,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:73,y:402,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:402,w:14,h:6,r:3,pos:'bottom'},{x:158,y:402,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:182,y:116,w:4,h:22,side:'right'},{x:182,y:146,w:4,h:22,side:'right'},{x:182,y:86,w:4,h:18,side:'right'}],punchhole:{x:93,y:22,r:3},dims:'162.1×76.7mm'},
+  'Nothing Phone (2a)':{bw:184,bh:406,cr:16,sw:162,sh:370,sx:11,sy:18,cameras:[{x:126,y:20,w:34,h:72,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:72,y:400,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:400,w:14,h:6,r:3,pos:'bottom'},{x:156,y:400,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:180,y:114,w:4,h:22,side:'right'},{x:180,y:144,w:4,h:22,side:'right'},{x:180,y:84,w:4,h:18,side:'right'}],punchhole:{x:92,y:22,r:3},dims:'161.7×76.3mm'},
+  'Nothing Phone (2)':{bw:190,bh:414,cr:14,sw:168,sh:378,sx:11,sy:18,cameras:[{x:128,y:20,w:36,h:76,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:75,y:408,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:408,w:14,h:6,r:3,pos:'bottom'},{x:162,y:408,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:186,y:116,w:4,h:22,side:'right'},{x:186,y:146,w:4,h:22,side:'right'},{x:186,y:86,w:4,h:18,side:'right'}],punchhole:{x:95,y:22,r:3},dims:'161.1×76.4mm'},
+
+  // ── MOTOROLA ─────────────────────────────────────────────────
+  'Moto Edge 50 Pro':{bw:190,bh:416,cr:16,sw:168,sh:380,sx:11,sy:18,cameras:[{x:12,y:18,w:72,h:72,r:36,shape:'circle-module',label:'Triple Cam'}],ports:[{x:75,y:410,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:410,w:14,h:6,r:3,pos:'bottom'},{x:162,y:410,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:186,y:118,w:4,h:22,side:'right'},{x:186,y:148,w:4,h:22,side:'right'},{x:186,y:88,w:4,h:18,side:'right'}],punchhole:{x:95,y:22,r:3.5},dims:'161.2×73.2mm'},
+  'Moto Edge 50':{bw:186,bh:408,cr:16,sw:164,sh:372,sx:11,sy:18,cameras:[{x:12,y:18,w:66,h:66,r:33,shape:'circle-module',label:'Triple Cam'}],ports:[{x:73,y:402,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:402,w:14,h:6,r:3,pos:'bottom'},{x:158,y:402,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:182,y:116,w:4,h:22,side:'right'},{x:182,y:146,w:4,h:22,side:'right'},{x:182,y:86,w:4,h:18,side:'right'}],punchhole:{x:93,y:22,r:3.5},dims:'159.6×72mm'},
+  'Moto G85 5G':{bw:186,bh:406,cr:14,sw:164,sh:370,sx:11,sy:18,cameras:[{x:130,y:20,w:36,h:76,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:73,y:400,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:400,w:14,h:6,r:3,pos:'bottom'},{x:158,y:400,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:182,y:114,w:4,h:22,side:'right'},{x:182,y:144,w:4,h:22,side:'right'},{x:182,y:84,w:4,h:18,side:'right'}],punchhole:{x:93,y:22,r:3},dims:'161.9×73.3mm'},
+  'Moto G75 5G':{bw:184,bh:402,cr:14,sw:162,sh:366,sx:11,sy:18,cameras:[{x:126,y:20,w:34,h:72,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:72,y:396,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:396,w:14,h:6,r:3,pos:'bottom'},{x:156,y:396,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:180,y:112,w:4,h:22,side:'right'},{x:180,y:142,w:4,h:22,side:'right'},{x:180,y:82,w:4,h:18,side:'right'}],punchhole:{x:92,y:22,r:3},dims:'162.1×74mm'},
+  'Moto G64 5G':{bw:182,bh:398,cr:14,sw:160,sh:362,sx:11,sy:18,cameras:[{x:122,y:20,w:34,h:70,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:71,y:392,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:392,w:14,h:6,r:3,pos:'bottom'},{x:154,y:392,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:178,y:110,w:4,h:22,side:'right'},{x:178,y:140,w:4,h:22,side:'right'},{x:178,y:80,w:4,h:18,side:'right'}],punchhole:{x:91,y:20,r:3},dims:'163.4×74.7mm'},
+  'Moto G54 5G':{bw:180,bh:394,cr:14,sw:158,sh:358,sx:11,sy:18,cameras:[{x:118,y:20,w:34,h:68,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:70,y:388,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:388,w:14,h:6,r:3,pos:'bottom'},{x:152,y:388,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:176,y:108,w:4,h:22,side:'right'},{x:176,y:138,w:4,h:22,side:'right'},{x:176,y:78,w:4,h:18,side:'right'}],punchhole:{x:90,y:20,r:3},dims:'159.9×74.5mm'},
+
+  // ── REALME ───────────────────────────────────────────────────
+  'Realme GT 7 Pro':{bw:196,bh:420,cr:16,sw:174,sh:384,sx:11,sy:18,cameras:[{x:12,y:18,w:76,h:76,r:38,shape:'circle-module',label:'Triple Cam'}],ports:[{x:78,y:414,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:414,w:14,h:6,r:3,pos:'bottom'},{x:164,y:414,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:192,y:118,w:4,h:22,side:'right'},{x:192,y:148,w:4,h:22,side:'right'},{x:192,y:88,w:4,h:18,side:'right'}],punchhole:{x:98,y:22,r:3.5},dims:'162.2×76.7mm'},
+  'Realme GT 6T':{bw:190,bh:412,cr:16,sw:168,sh:376,sx:11,sy:18,cameras:[{x:130,y:20,w:36,h:78,r:10,shape:'rectv',label:'Triple Cam'}],ports:[{x:75,y:406,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:406,w:14,h:6,r:3,pos:'bottom'},{x:162,y:406,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:186,y:118,w:4,h:22,side:'right'},{x:186,y:148,w:4,h:22,side:'right'},{x:186,y:88,w:4,h:18,side:'right'}],punchhole:{x:95,y:22,r:3.5},dims:'162.5×75.8mm'},
+  'Realme GT 6':{bw:190,bh:412,cr:16,sw:168,sh:376,sx:11,sy:18,cameras:[{x:130,y:20,w:36,h:78,r:10,shape:'rectv',label:'Triple Cam'}],ports:[{x:75,y:406,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:406,w:14,h:6,r:3,pos:'bottom'},{x:162,y:406,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:186,y:118,w:4,h:22,side:'right'},{x:186,y:148,w:4,h:22,side:'right'},{x:186,y:88,w:4,h:18,side:'right'}],punchhole:{x:95,y:22,r:3.5},dims:'162.5×75.8mm'},
+  'Realme 13 Pro+':{bw:192,bh:416,cr:16,sw:170,sh:380,sx:11,sy:18,cameras:[{x:12,y:18,w:72,h:72,r:36,shape:'circle-module',label:'Triple Cam'}],ports:[{x:76,y:410,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:410,w:14,h:6,r:3,pos:'bottom'},{x:164,y:410,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:188,y:118,w:4,h:22,side:'right'},{x:188,y:148,w:4,h:22,side:'right'},{x:188,y:88,w:4,h:18,side:'right'}],punchhole:{x:96,y:22,r:3.5},dims:'161.9×74.4mm'},
+  'Realme 13 Pro':{bw:188,bh:410,cr:16,sw:166,sh:374,sx:11,sy:18,cameras:[{x:12,y:18,w:68,h:68,r:34,shape:'circle-module',label:'Dual Cam'}],ports:[{x:74,y:404,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:404,w:14,h:6,r:3,pos:'bottom'},{x:160,y:404,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:184,y:116,w:4,h:22,side:'right'},{x:184,y:146,w:4,h:22,side:'right'},{x:184,y:86,w:4,h:18,side:'right'}],punchhole:{x:94,y:22,r:3.5},dims:'161.6×74.4mm'},
+  'Realme 12 Pro+':{bw:190,bh:414,cr:16,sw:168,sh:378,sx:11,sy:18,cameras:[{x:12,y:18,w:70,h:70,r:35,shape:'circle-module',label:'Triple Cam'}],ports:[{x:75,y:408,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:408,w:14,h:6,r:3,pos:'bottom'},{x:162,y:408,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:186,y:118,w:4,h:22,side:'right'},{x:186,y:148,w:4,h:22,side:'right'},{x:186,y:88,w:4,h:18,side:'right'}],punchhole:{x:95,y:22,r:3.5},dims:'161.5×74.3mm'},
+  'Realme 12 Pro':{bw:186,bh:408,cr:16,sw:164,sh:372,sx:11,sy:18,cameras:[{x:12,y:18,w:64,h:64,r:32,shape:'circle-module',label:'Dual Cam'}],ports:[{x:73,y:402,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:402,w:14,h:6,r:3,pos:'bottom'},{x:158,y:402,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:182,y:116,w:4,h:22,side:'right'},{x:182,y:146,w:4,h:22,side:'right'},{x:182,y:86,w:4,h:18,side:'right'}],punchhole:{x:93,y:22,r:3.5},dims:'161.5×74.1mm'},
+  'Realme Narzo 70 Pro':{bw:184,bh:404,cr:14,sw:162,sh:368,sx:11,sy:18,cameras:[{x:126,y:20,w:34,h:72,r:10,shape:'rectv',label:'Triple Cam'}],ports:[{x:72,y:398,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:398,w:14,h:6,r:3,pos:'bottom'},{x:156,y:398,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:180,y:114,w:4,h:22,side:'right'},{x:180,y:144,w:4,h:22,side:'right'},{x:180,y:84,w:4,h:18,side:'right'}],punchhole:{x:92,y:22,r:3},dims:'162.4×74.2mm'},
+  'Realme C67 5G':{bw:180,bh:396,cr:12,sw:158,sh:360,sx:11,sy:18,cameras:[{x:118,y:18,w:34,h:68,r:10,shape:'rectv',label:'Dual Cam'}],ports:[{x:70,y:390,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:390,w:14,h:6,r:3,pos:'bottom'},{x:152,y:390,w:14,h:6,r:3,pos:'bottom'}],btns:[{x:176,y:110,w:4,h:22,side:'right'},{x:176,y:140,w:4,h:22,side:'right'},{x:176,y:80,w:4,h:18,side:'right'}],punchhole:{x:90,y:20,r:3},dims:'167×76.7mm'},
+};
+
+function tmplLoadBrand() {
+  const brand = document.getElementById('tmplBrand').value;
+  const modelSel = document.getElementById('tmplModel');
+  if (!brand) { modelSel.disabled = true; modelSel.innerHTML = '<option>— Choose Model —</option>'; tmplClear(); return; }
+  const models = BRANDS[brand] || [];
+  modelSel.innerHTML = '<option value="">— Choose Model —</option>' + models.map(m => `<option value="${m}">${m}</option>`).join('');
+  modelSel.disabled = false;
+  tmplClear();
+}
+
+function tmplClear() {
+  document.getElementById('tmplPlaceholder').style.display = 'block';
+  document.getElementById('tmplResult').style.display = 'none';
+  document.getElementById('tmplDlBtn').disabled = true;
+}
+
+function tmplRender() {
+  const model = document.getElementById('tmplModel').value;
+  if (!model) { tmplClear(); return; }
+  const spec = PHONE_SPECS[model];
+  if (!spec) { generateGenericTemplate(model); return; }
+  renderTemplate(model, spec);
+}
+
+function generateGenericTemplate(model) {
+  // Fallback: generate a sensible generic template for unlisted models
+  const spec = {bw:190,bh:414,cr:16,sw:168,sh:378,sx:11,sy:18,
+    cameras:[{x:130,y:20,w:36,h:76,r:10,shape:'rectv',label:'Camera'}],
+    ports:[{x:75,y:408,w:40,h:6,r:3,pos:'bottom',label:'USB-C'},{x:10,y:408,w:14,h:6,r:3,pos:'bottom'},{x:162,y:408,w:14,h:6,r:3,pos:'bottom'}],
+    btns:[{x:186,y:116,w:4,h:22,side:'right'},{x:186,y:146,w:4,h:22,side:'right'},{x:186,y:86,w:4,h:18,side:'right'}],
+    punchhole:{x:95,y:22,r:3},dims:'~162×75mm (generic)'};
+  renderTemplate(model, spec);
+}
+
+function renderTemplate(model, spec) {
+  document.getElementById('tmplPhoneName').textContent = model;
+
+  const ox = (220 - spec.bw) / 2;
+  const oy = (440 - spec.bh) / 2;
+
+  let svg = '';
+
+  // Background grid
+  svg += `<defs>
+    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M10 0L0 0 0 10" fill="none" stroke="rgba(255,255,255,.04)" stroke-width=".5"/>
+    </pattern>
+  </defs>
+  <rect width="220" height="440" fill="url(#grid)"/>`;
+
+  // Phone body outline
+  svg += `<rect x="${ox}" y="${oy}" width="${spec.bw}" height="${spec.bh}" rx="${spec.cr}" ry="${spec.cr}" class="cut-body"/>`;
+
+  // Screen area
+  svg += `<rect x="${ox+spec.sx}" y="${oy+spec.sy}" width="${spec.sw}" height="${spec.sh}" rx="4" ry="4" class="cut-screen"/>`;
+
+  // Dynamic Island / Notch
+  if (spec.di) {
+    // Dynamic Island — pill cutout at top-center of screen
+    const diW = 42, diH = 11, diX = ox + spec.sx + (spec.sw - diW)/2, diY = oy + spec.sy + 6;
+    svg += `<rect x="${diX}" y="${diY}" width="${diW}" height="${diH}" rx="6" ry="6" class="cut-camera"/>`;
+    svg += `<text x="${diX + diW/2}" y="${diY - 2}" text-anchor="middle" class="cut-label">D. Island</text>`;
+  } else if (spec.notch) {
+    const nW = 56, nH = 24, nX = ox + spec.sx + (spec.sw - nW)/2, nY = oy + spec.sy;
+    svg += `<rect x="${nX}" y="${nY}" width="${nW}" height="${nH}" rx="0" ry="0" class="cut-camera"/>`;
+    svg += `<text x="${nX + nW/2}" y="${nY - 2}" text-anchor="middle" class="cut-label">Notch</text>`;
+  }
+
+  // Punch-hole selfie cam
+  if (spec.punchhole && !spec.di && !spec.notch) {
+    const ph = spec.punchhole;
+    svg += `<circle cx="${ox + ph.x}" cy="${oy + ph.y}" r="${ph.r}" class="cut-camera"/>`;
+  }
+
+  // Cameras
+  (spec.cameras || []).forEach(cam => {
+    const cx = ox + cam.x, cy = oy + cam.y;
+    if (cam.shape === 'circle-module' || cam.shape === 'circle') {
+      const r = cam.w / 2;
+      svg += `<circle cx="${cx + r}" cy="${cy + r}" r="${r}" class="cut-camera"/>`;
+      // Inner lenses
+      if (cam.shape === 'circle-module') {
+        svg += `<circle cx="${cx+r-8}" cy="${cy+r-6}" r="8" fill="rgba(255,0,110,.1)" stroke="rgba(255,0,110,.5)" stroke-width=".8"/>`;
+        svg += `<circle cx="${cx+r+8}" cy="${cy+r-4}" r="8" fill="rgba(255,0,110,.1)" stroke="rgba(255,0,110,.5)" stroke-width=".8"/>`;
+        svg += `<circle cx="${cx+r-2}" cy="${cy+r+10}" r="8" fill="rgba(255,0,110,.1)" stroke="rgba(255,0,110,.5)" stroke-width=".8"/>`;
+      }
+    } else if (cam.shape === 'island') {
+      // iPhone camera island — rounded square
+      svg += `<rect x="${cx}" y="${cy}" width="${cam.w}" height="${cam.h}" rx="${cam.r}" ry="${cam.r}" class="cut-camera"/>`;
+      // 3 lenses inside island
+      svg += `<circle cx="${cx+22}" cy="${cy+22}" r="12" fill="rgba(255,0,110,.12)" stroke="rgba(255,0,110,.6)" stroke-width="1"/>`;
+      svg += `<circle cx="${cx+50}" cy="${cy+22}" r="12" fill="rgba(255,0,110,.12)" stroke="rgba(255,0,110,.6)" stroke-width="1"/>`;
+      svg += `<circle cx="${cx+22}" cy="${cy+52}" r="12" fill="rgba(255,0,110,.12)" stroke="rgba(255,0,110,.6)" stroke-width="1"/>`;
+      svg += `<rect x="${cx+44}" y="${cy+44}" width="18" height="18" rx="3" fill="rgba(255,183,0,.1)" stroke="rgba(255,183,0,.5)" stroke-width=".8"/>`;
+    } else if (cam.shape === 'triple') {
+      svg += `<rect x="${cx}" y="${cy}" width="${cam.w}" height="${cam.h}" rx="${cam.r}" ry="${cam.r}" class="cut-camera"/>`;
+      svg += `<circle cx="${cx+18}" cy="${cy+18}" r="11" fill="rgba(255,0,110,.1)" stroke="rgba(255,0,110,.5)" stroke-width=".8"/>`;
+      svg += `<circle cx="${cx+50}" cy="${cy+18}" r="11" fill="rgba(255,0,110,.1)" stroke="rgba(255,0,110,.5)" stroke-width=".8"/>`;
+      svg += `<circle cx="${cx+34}" cy="${cy+50}" r="11" fill="rgba(255,0,110,.1)" stroke="rgba(255,0,110,.5)" stroke-width=".8"/>`;
+    } else if (cam.shape === 'rectv') {
+      // Vertical pill camera module (Samsung style)
+      svg += `<rect x="${cx}" y="${cy}" width="${cam.w}" height="${cam.h}" rx="${cam.r}" ry="${cam.r}" class="cut-camera"/>`;
+      const nLenses = cam.h > 80 ? 3 : cam.h > 60 ? 2 : 1;
+      for (let i=0;i<nLenses;i++) {
+        svg += `<circle cx="${cx+cam.w/2}" cy="${cy+16+i*28}" r="${Math.min(cam.w/2-4,12)}" fill="rgba(255,0,110,.1)" stroke="rgba(255,0,110,.5)" stroke-width=".8"/>`;
+      }
+    } else {
+      // Generic rect
+      svg += `<rect x="${cx}" y="${cy}" width="${cam.w}" height="${cam.h}" rx="${cam.r}" ry="${cam.r}" class="cut-camera"/>`;
+    }
+    if (cam.label) svg += `<text x="${cx + cam.w/2}" y="${cy + cam.h + 8}" text-anchor="middle" class="cut-label">${cam.label}</text>`;
+  });
+
+  // Ports (bottom/top)
+  (spec.ports || []).forEach(port => {
+    const px = ox + port.x, py = oy + port.y;
+    svg += `<rect x="${px}" y="${py}" width="${port.w}" height="${port.h}" rx="${port.r}" ry="${port.r}" class="cut-hole"/>`;
+    if (port.label) svg += `<text x="${px + port.w/2}" y="${py + port.h + 8}" text-anchor="middle" class="cut-label">${port.label}</text>`;
+  });
+
+  // Buttons
+  (spec.btns || []).forEach(btn => {
+    const bx = btn.side === 'left' ? ox + btn.x : ox + btn.x;
+    const by = oy + btn.y;
+    svg += `<rect x="${bx}" y="${by}" width="${btn.w}" height="${btn.h}" rx="2" ry="2" class="cut-btn"/>`;
+    if (btn.label) svg += `<text x="${bx + btn.w/2}" y="${by + btn.h + 8}" text-anchor="middle" class="cut-label">${btn.label}</text>`;
+  });
+
+  // Dimension annotations
+  if (spec.dims) {
+    svg += `<text x="110" y="432" text-anchor="middle" class="cut-dim">${spec.dims}</text>`;
+  }
+
+  // Crosshair registration marks
+  const chs = [{x:8,y:8},{x:212,y:8},{x:8,y:432},{x:212,y:432}];
+  chs.forEach(ch => {
+    svg += `<line x1="${ch.x-5}" y1="${ch.y}" x2="${ch.x+5}" y2="${ch.y}" class="cut-crosshair"/>`;
+    svg += `<line x1="${ch.x}" y1="${ch.y-5}" x2="${ch.x}" y2="${ch.y+5}" class="cut-crosshair"/>`;
+  });
+
+  document.getElementById('tmplSVG').innerHTML = svg;
+  document.getElementById('tmplPlaceholder').style.display = 'none';
+  document.getElementById('tmplResult').style.display = 'block';
+  document.getElementById('tmplDlBtn').disabled = false;
+}
+
+function downloadTemplate() {
+  const brand = document.getElementById('tmplBrand').value;
+  const model = document.getElementById('tmplModel').value;
+  if (!model) return;
+  const svg = document.getElementById('tmplSVG');
+  const spec = PHONE_SPECS[model] || {};
+
+  const fullSVG = `<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 220 440" xmlns="http://www.w3.org/2000/svg" width="220mm" height="440mm">
+<title>SkinRiot Cutout Template – ${model}</title>
+<desc>Precision vinyl skin cutout template for ${model}. Print at 100% scale (no fit to page). Dimensions: ${spec.dims||'standard'}. © SkinRiot</desc>
+<style>
+  .cut-body{fill:none;stroke:#00F5FF;stroke-width:2;}
+  .cut-screen{fill:rgba(0,245,255,.08);stroke:rgba(0,245,255,.5);stroke-width:1.2;}
+  .cut-camera{fill:rgba(255,0,110,.15);stroke:rgba(255,0,110,.8);stroke-width:1.2;}
+  .cut-hole{fill:rgba(255,183,0,.12);stroke:rgba(255,183,0,.8);stroke-width:1;}
+  .cut-btn{fill:rgba(100,100,255,.15);stroke:rgba(130,130,255,.8);stroke-width:1;}
+  .cut-label{font-family:Arial,sans-serif;font-size:7px;fill:rgba(0,0,0,.5);}
+  .cut-dim{font-family:Arial,sans-serif;font-size:6.5px;fill:#00F5FF;}
+  .cut-crosshair{stroke:rgba(0,0,0,.3);stroke-width:.5;stroke-dasharray:2,2;}
+</style>
+${svg.innerHTML}
+</svg>`;
+
+  const blob = new Blob([fullSVG], {type:'image/svg+xml'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = `SkinRiot_${model.replace(/ /g,'_')}_template.svg`;
+  a.click();
+  URL.revokeObjectURL(url);
+  toast('✅ Template downloaded! Print at 100% scale.');
+}
+
+function tmplOrderViaWA() {
+  const brand = document.getElementById('tmplBrand').value || '(not selected)';
+  const model = document.getElementById('tmplModel').value || '(not selected)';
+  openWA(`Hi SkinRiot! 👋\n\nI want to order a vinyl skin for my phone.\n\n📱 *Phone:* ${brand} ${model}\n\nPlease help me pick a design and confirm the order. Thank you! 🙏`);
+}
+
+function initTemplate() {
+  const brandSel = document.getElementById('tmplBrand');
+  if (!brandSel.options.length || brandSel.options.length === 1) {
+    buildBrandSelect('tmplBrand');
+  }
+}
+
 // ═══════════════════════════════════════════════════════════════════
 window.addEventListener('storage', ()=>renderProducts());
 renderProducts();
